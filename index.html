@@ -201,11 +201,11 @@ td:has(>input.ck:checked){color:var(--muted)}
  table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:100%}
  table.stack tr{border-bottom:1px solid var(--rule);padding:7px 0}
  table.stack tbody tr:last-child{border-bottom:0}
- table.stack td{border:0;padding:3px 2px;display:flex;gap:8px;min-width:0;overflow-wrap:anywhere}
- table.stack td::before{content:attr(data-label);flex:0 0 40%;min-width:0;font-weight:700;color:var(--ink2);font-size:12px;overflow-wrap:anywhere}
+ table.stack td{border:0;padding:4px 2px 6px;display:block;min-width:0;overflow-wrap:anywhere}
+ table.stack td::before{content:attr(data-label);display:block;font-weight:700;color:var(--ink2);font-size:11px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:1px;overflow-wrap:anywhere}
  table.stack td>*{min-width:0}
  .table-wrap:has(table.stack){overflow-x:clip}
- body.quiz table.stack td.ans{display:flex}
+ body.quiz table.stack td.ans{display:block}
 }
 @media print{
  .topbar,nav#toc,#totop,#backdrop,#progress,.skip{display:none!important}
@@ -264,28 +264,192 @@ td:has(>input.ck:checked){color:var(--muted)}
   <div class="navctl"><button id="btnResetCk">Reset checklists</button></div>
   <div class="ckcount" id="ckcount"></div>
   <div class="navhdr">Contents</div>
-  <a class="part part-1" href="#part-i-head-neck-anatomy-to-know-cold">PART I. HEAD & NECK ANATOMY TO KNOW COLD</a>
-<a class="sub part-1" href="#carotid-bifurcation-and-the-neck">Carotid bifurcation and the neck</a>
-<a class="sub part-1" href="#cranial-nerves-of-the-neck-your-ent-cranial-nerve-exam">Cranial nerves of the neck (your ENT cranial-nerve exam)</a>
-<a class="sub part-1" href="#aortic-arch-arteria-lusoria-and-the-non-recurrent-nerve">Aortic arch, arteria lusoria, and the non-recurrent nerve</a>
-<a class="part part-2" href="#part-ii-or-survival-and-microvascular-transfer">PART II. OR SURVIVAL AND MICROVASCULAR TRANSFER</a>
-<a class="sub part-2" href="#instruments-and-suture-the-free-flap-transfer">Instruments and suture (the free-flap transfer)</a>
-<a class="sub part-2" href="#the-two-genuine-vascular-to-ent-transfer-clusters">The two genuine vascular-to-ENT transfer clusters</a>
-<a class="part part-3" href="#part-iii-self-test-pimp-qa">PART III. SELF-TEST: PIMP Q&A</a>
-<a class="sub part-3" href="#head-neck-anatomy">Head & neck anatomy</a>
-<a class="part part-4" href="#part-iv-abbreviations">PART IV. ABBREVIATIONS</a>
-<a class="sub part-4" href="#abbreviations">Abbreviations</a>
-<a class="sub part-4" href="#trials-studies">Trials & studies</a>
+  <a class="part part-1" href="#part-i-tier-1-cram-and-emergencies">PART I. TIER-1 CRAM AND EMERGENCIES</a>
+<a class="sub part-1" href="#ent-emergencies-card-know-these-cold">ENT emergencies card (know these cold)</a>
+<a class="sub part-1" href="#master-numbers">Master numbers</a>
+<a class="part part-2" href="#part-ii-head-and-neck-oncology">PART II. HEAD AND NECK ONCOLOGY</a>
+<a class="sub part-2" href="#neck-levels-i-to-vii">Neck levels I to VII</a>
+<a class="sub part-2" href="#carotid-bifurcation-and-the-great-vessels">Carotid bifurcation and the great vessels</a>
+<a class="sub part-2" href="#cranial-nerves-of-the-neck-also-your-cranial-nerve-exam">Cranial nerves of the neck (also your cranial-nerve exam)</a>
+<a class="sub part-2" href="#deep-neck-spaces">Deep neck spaces</a>
+<a class="sub part-2" href="#larynx-rln-versus-sln">Larynx: RLN versus SLN</a>
+<a class="sub part-2" href="#thyroid-and-parathyroid-landmarks">Thyroid and parathyroid landmarks</a>
+<a class="sub part-2" href="#free-flaps-for-reconstruction">Free flaps for reconstruction</a>
+<a class="part part-3" href="#part-iii-pediatric-ent">PART III. PEDIATRIC ENT</a>
+<a class="sub part-3" href="#tonsils-and-adenoids">Tonsils and adenoids</a>
+<a class="sub part-3" href="#ear-tubes-and-effusion">Ear: tubes and effusion</a>
+<a class="sub part-3" href="#pediatric-airway-and-stridor">Pediatric airway and stridor</a>
+<a class="part part-4" href="#part-iv-or-survival-and-ai-rebuild">PART IV. OR SURVIVAL AND AI REBUILD</a>
+<a class="sub part-4" href="#the-behaviors-that-are-the-evaluation">The behaviors that are the evaluation</a>
+<a class="sub part-4" href="#instruments-and-suture">Instruments and suture</a>
+<a class="sub part-4" href="#the-two-genuine-transfer-clusters-from-vascular">The two genuine transfer clusters from vascular</a>
+<a class="sub part-4" href="#knots-and-graduated-responsibility">Knots and graduated responsibility</a>
+<a class="part part-5" href="#part-v-self-test-pimp-qa">PART V. SELF-TEST: PIMP Q&A</a>
+<a class="sub part-5" href="#emergencies-and-airway">Emergencies and airway</a>
+<a class="sub part-5" href="#head-and-neck-anatomy">Head and neck anatomy</a>
+<a class="sub part-5" href="#pediatrics">Pediatrics</a>
+<a class="part part-6" href="#part-vi-rotation-plan">PART VI. ROTATION PLAN</a>
+<a class="sub part-6" href="#daily-rhythm">Daily rhythm</a>
+<a class="sub part-6" href="#resources">Resources</a>
+<a class="sub part-6" href="#micro-habits">Micro-habits</a>
+<a class="part part-7" href="#part-vii-abbreviations">PART VII. ABBREVIATIONS</a>
+<a class="sub part-7" href="#abbreviations">Abbreviations</a>
+<a class="sub part-7" href="#trials-studies">Trials & studies</a>
 </nav>
 <main id="main" tabindex="-1">
-  <div class="header"><h1>ENT Acting Internship</h1><p><strong>Rotation survival and performance guide.</strong> A phone-first, high-yield study tool for the July <abbr class="gl" tabindex="0" title="ear, nose, and throat (otolaryngology)">ENT</abbr> acting internship. This first build carries over the head &amp; neck and microvascular material already written for the vascular elective (the genuine ENT-transfer blocks); subspecialty depth (head &amp; neck oncology and free flaps, pediatric ENT, otology, rhinology, laryngology, facial plastics) is added in later drops. Personal study notes, not clinical guidance.</p></div>
-  <details class="part part-1" id="part-i-head-neck-anatomy-to-know-cold" data-defaultopen="1" open data-spy><summary><span class="pl">Part</span><h1>PART I. HEAD & NECK ANATOMY TO KNOW COLD</h1><span class="chev">▸</span></summary><div class="part-body"><section class="subsec" id="carotid-bifurcation-and-the-neck" data-spy><h2>Carotid bifurcation and the neck</h2><ul>
-<li><strong><abbr class="gl" tabindex="0" title="common carotid artery">CCA</abbr> bifurcates at the upper border of the thyroid cartilage, about C3–C4</strong> (variable, C3–C5; do not quote one level as gospel). <strong><abbr class="gl" tabindex="0" title="internal carotid artery">ICA</abbr> posterolateral, <abbr class="gl" tabindex="0" title="external carotid artery">ECA</abbr> anteromedial.</strong></li>
-<li><strong><abbr class="gl" tabindex="0" title="the dilated proximal internal carotid at the bifurcation; the usual plaque site">Carotid bulb</abbr></strong> = proximal ICA = the plaque site; seat of the <strong><abbr class="gl" tabindex="0" title="baroreceptor in the wall of the proximal internal carotid (CN IX)">carotid sinus</abbr></strong> (baroreceptor, CN IX) and <strong><abbr class="gl" tabindex="0" title="chemoreceptor at the carotid bifurcation (CN IX); origin of carotid-body paragangliomas">carotid body</abbr></strong> (chemoreceptor, CN IX; the carotid-body paraganglioma arises here).</li>
-<li><strong>Two guaranteed pimps:</strong> the first ECA branch is the <strong>superior thyroid artery</strong>; the ICA has <strong>zero branches in the neck</strong> (its first branch, the ophthalmic, is intracranial). On angiography the branchy neck vessel is the ECA and the smooth one to the skull base is the ICA.</li>
-<li><strong>ECA branches, “Some Anatomists Like Freaking Out Poor Medical Students”:</strong> Superior thyroid, Ascending pharyngeal, Lingual, Facial, Occipital, Posterior auricular, Maxillary, Superficial temporal. The maxillary gives the middle meningeal (epidural hematoma) and the <strong>sphenopalatine</strong>, the “artery of epistaxis.”</li>
-<li><strong>ICA vs ECA on duplex:</strong> the ICA shows a <strong>low-resistance</strong> waveform (high diastolic flow, it feeds the brain); the ECA shows a <strong>high-resistance</strong> waveform, and a <strong><abbr class="gl" tabindex="0" title="tapping the superficial temporal artery to confirm the external carotid waveform on duplex">temporal tap</abbr></strong> confirms the ECA.</li>
-<li><strong>Left vs right <abbr class="gl" tabindex="0" title="recurrent laryngeal nerve">RLN</abbr> asymmetry:</strong> the left recurrent laryngeal nerve loops under the aortic arch (a long mediastinal course), so a left mediastinal or aortic process can cause hoarseness (<strong><abbr class="gl" tabindex="0" title="hoarseness from left recurrent laryngeal nerve stretch by a mediastinal or aortic process (Ortner syndrome)">cardiovocal</abbr> / <abbr class="gl" tabindex="0" title="hoarseness from left recurrent laryngeal nerve stretch by a mediastinal or aortic process">Ortner syndrome</abbr></strong>); the right RLN loops under the right subclavian artery.</li>
+  <div class="header"><h1>ENT Acting Internship</h1><p><strong>Rotation survival and performance guide.</strong> A phone-first, high-yield study tool for the July <abbr class="gl" tabindex="0" title="ear, nose, and throat (otolaryngology)">ENT</abbr> acting internship, weighted to the service you are on (head &amp; neck oncology and pediatrics) plus the cross-cutting survival layer that helps on any rotation. Lead with the high-yield number, know the emergencies cold, and look useful in the OR. Personal study notes, not clinical guidance; verify management against current guidelines and your team.</p></div>
+  <details class="part part-1" id="part-i-tier-1-cram-and-emergencies" data-defaultopen="1" open data-spy><summary><span class="pl">Part</span><h1>PART I. TIER-1 CRAM AND EMERGENCIES</h1><span class="chev">▸</span></summary><div class="part-body"><section class="subsec" id="ent-emergencies-card-know-these-cold" data-spy><h2>ENT emergencies card (know these cold)</h2><div class="table-wrap"><table class="caption-top stack">
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Emergency</th>
+<th>Recognize</th>
+<th>First move</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-label="Emergency"><strong>Cannot intubate, cannot oxygenate</strong></td>
+<td data-label="Recognize">Failed mask + failed intubation, falling sats</td>
+<td data-label="First move"><strong>Front-of-neck airway</strong> through the <strong>cricothyroid membrane</strong> (between thyroid and cricoid cartilage); in children <strong>younger than about 12</strong> use needle cricothyrotomy + jet ventilation (the membrane is too small for a surgical cric)</td>
+</tr>
+<tr class="even">
+<td data-label="Emergency"><strong>Expanding neck hematoma</strong> (post-thyroid/neck/carotid)</td>
+<td data-label="Recognize">Swelling, voice change, stridor</td>
+<td data-label="First move"><strong>Open the incision at the bedside</strong> to decompress, then definitive control in the OR</td>
+</tr>
+<tr class="odd">
+<td data-label="Emergency"><strong>Post-tonsillectomy bleed</strong></td>
+<td data-label="Recognize">Bleeding, or repeated swallowing in a child (swallowed blood hides volume)</td>
+<td data-label="First move">ABCs and IV access; most secondary bleeds are <strong><abbr class="gl" tabindex="0" title="postoperative day">POD</abbr> 5–10</strong>; active or significant bleed goes to the <strong>OR</strong></td>
+</tr>
+<tr class="even">
+<td data-label="Emergency"><strong>Peritonsillar abscess (<abbr class="gl" tabindex="0" title="peritonsillar abscess">PTA</abbr>)</strong></td>
+<td data-label="Recognize">“Hot-potato” voice, <strong>trismus</strong>, <strong>uvula pushed away</strong> from the bulge</td>
+<td data-label="First move"><strong>Needle aspiration or I&amp;D</strong> + antibiotics (adolescents/young adults)</td>
+</tr>
+<tr class="odd">
+<td data-label="Emergency"><strong>Retropharyngeal abscess (<abbr class="gl" tabindex="0" title="retropharyngeal abscess">RPA</abbr>)</strong></td>
+<td data-label="Recognize">Young child, neck stiffness, odynophagia; lateral neck film shows <strong>widened prevertebral soft tissue</strong></td>
+<td data-label="First move">CT with contrast; airway watch; drainage; risk is spread to the <strong>danger space and mediastinum</strong></td>
+</tr>
+<tr class="even">
+<td data-label="Emergency"><strong><abbr class="gl" tabindex="0" title="bilateral submandibular and sublingual cellulitis that elevates the floor of the mouth and threatens the airway">Ludwig angina</abbr></strong></td>
+<td data-label="Recognize">Bilateral <strong>submandibular, sublingual, and submental</strong> cellulitis (usually odontogenic), <strong>floor-of-mouth elevation</strong>, tongue displacement</td>
+<td data-label="First move"><strong>Secure the airway early</strong>, IV antibiotics, drainage</td>
+</tr>
+<tr class="odd">
+<td data-label="Emergency"><strong>ACE-inhibitor angioedema</strong></td>
+<td data-label="Recognize">Non-itchy, non-urticarial lip/tongue swelling; can appear <strong>at any time on the drug</strong> (usually early, sometimes after years)</td>
+<td data-label="First move"><strong>Airway is the priority</strong>; it is <strong>bradykinin-mediated</strong>, so epinephrine/antihistamine/steroid are unreliable</td>
+</tr>
+<tr class="even">
+<td data-label="Emergency"><strong>Epiglottitis (supraglottitis)</strong></td>
+<td data-label="Recognize">Now <strong>adult-predominant</strong>; muffled voice, drooling, tripod posture; <strong>thumbprint sign</strong> on lateral neck</td>
+<td data-label="First move">Do not agitate a suspected pediatric case; <strong>secure the airway in the OR</strong>; broad antibiotics</td>
+</tr>
+<tr class="odd">
+<td data-label="Emergency"><strong>Orbital complications of sinusitis</strong></td>
+<td data-label="Recognize">Postseptal signs: <strong>proptosis, painful or limited eye movement, vision change</strong> (vs preseptal lid swelling only)</td>
+<td data-label="First move">CT; IV antibiotics; subperiosteal/orbital abscess needs <strong>drainage</strong></td>
+</tr>
+<tr class="even">
+<td data-label="Emergency"><strong>Retrobulbar hematoma</strong> (e.g., post-FESS)</td>
+<td data-label="Recognize">Proptosis, tense orbit, rising intraocular pressure, vision loss</td>
+<td data-label="First move"><strong>Emergent lateral canthotomy and cantholysis</strong></td>
+</tr>
+<tr class="odd">
+<td data-label="Emergency"><strong>Sudden sensorineural hearing loss</strong></td>
+<td data-label="Recognize"><strong>≥30 dB over 3 contiguous frequencies within 72 hours</strong>; (+) Weber to the better ear</td>
+<td data-label="First move"><strong>MRI</strong> to rule out retrocochlear disease; <strong>oral corticosteroids are an option</strong>, and <strong>intratympanic steroids should be offered as salvage</strong> for incomplete recovery (<abbr class="gl" tabindex="0" title="American Academy of Otolaryngology–Head and Neck Surgery">AAO-HNS</abbr> SSNHL, 2019)</td>
+</tr>
+<tr class="even">
+<td data-label="Emergency"><strong>Auricular hematoma</strong></td>
+<td data-label="Recognize">Fluctuant pinna after trauma</td>
+<td data-label="First move"><strong>Drain and bolster</strong> to prevent cauliflower ear</td>
+</tr>
+<tr class="odd">
+<td data-label="Emergency"><strong>Nasal septal hematoma</strong></td>
+<td data-label="Recognize">Bluish septal bulge after nasal trauma</td>
+<td data-label="First move"><strong>Drain</strong> to prevent septal abscess and saddle-nose deformity</td>
+</tr>
+</tbody>
+</table></div><div class="callout emergency"><span class="lab">Emergency</span>
+<p><strong>Emergency framing.</strong> The recurring ENT-call pattern is <strong>airway first</strong>, then stop the bleeding, then drain the pus. When in doubt about an airway, get to a controlled setting (OR) before it fails.</p>
+</div></section><section class="subsec" id="master-numbers" data-spy><h2>Master numbers</h2><p><strong>Audiogram and tuning forks (say Weber/Rinne slowly, it is the most-flubbed pimp):</strong></p><ul>
+<li>Normal hearing <strong>≤25 dB</strong>. An <strong>air-bone gap</strong> means a conductive component.</li>
+<li><strong>Weber</strong> lateralizes <strong>to</strong> a conductive ear and <strong>away from</strong> a sensorineural ear. <strong>Rinne:</strong> AC &gt; BC is normal or sensorineural; <strong>BC &gt; AC is conductive</strong>.</li>
+<li><strong>Carhart notch</strong> (~2000 Hz dip in bone conduction) suggests <strong>otosclerosis</strong>; a <strong>4000 Hz notch</strong> is <strong>noise-induced</strong>; downsloping high-frequency loss is <strong>presbycusis</strong>.</li>
+</ul><p><strong>Antibiotics (stewardship, do not reflexively reach for a macrolide or fluoroquinolone):</strong></p><div class="table-wrap"><table class="caption-top stack">
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Condition</th>
+<th>First-line</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-label="Condition"><strong>Acute otitis media</strong></td>
+<td data-label="First-line"><strong>High-dose amoxicillin 80–90 mg/kg/day</strong></td>
+<td data-label="Note">Amoxicillin-clavulanate if amoxicillin <strong>in the prior 30 days</strong>, concurrent conjunctivitis, or failure (AAP, 2013); observation an option in select nonsevere cases</td>
+</tr>
+<tr class="even">
+<td data-label="Condition"><strong>Acute bacterial rhinosinusitis</strong></td>
+<td data-label="First-line"><strong>Offer watchful waiting</strong> (preferred, with assured follow-up); if treating, <strong>amoxicillin ± clavulanate for 5–7 days</strong></td>
+<td data-label="Note">Diagnose at <strong>&gt;10 days without improvement, or double-worsening</strong> (AAO-HNS Adult Sinusitis, updated 2025)</td>
+</tr>
+<tr class="odd">
+<td data-label="Condition"><strong>Group A strep pharyngitis</strong></td>
+<td data-label="First-line">Penicillin or amoxicillin</td>
+<td data-label="Note">Confirm before treating</td>
+</tr>
+</tbody>
+</table></div><p><strong>Pediatric airway sizing:</strong> the <strong>cricoid (subglottis)</strong> is the narrowest <strong>fixed, complete ring</strong> in young children (classic teaching; in-vivo imaging suggests the glottis is functionally narrowest, a point an attending may probe). Uncuffed <abbr class="gl" tabindex="0" title="endotracheal tube">ETT</abbr> size = <strong>(age/4) + 4</strong>; cuffed ≈ <strong>(age/4) + 3.5</strong>; depth at the lip ≈ <strong>3 × tube size</strong>.</p><p><strong>Epistaxis ladder (AAO-HNS Nosebleed, 2020):</strong> firm <strong>compression</strong> + topical vasoconstrictor first, then <strong>cautery</strong> of an anterior (<abbr class="gl" tabindex="0" title="the anterior nasal septal vascular plexus (Little's area), the usual source of anterior epistaxis">Kiesselbach</abbr>/Little’s area) source, then <strong>packing</strong>; refractory posterior bleeds (sphenopalatine territory, <abbr class="gl" tabindex="0" title="the posterolateral nasal venous plexus, a source of posterior epistaxis">Woodruff plexus</abbr>) go to <strong>sphenopalatine artery ligation or embolization</strong>.</p><p><strong>Perioperative tonsillectomy:</strong> give <strong>dexamethasone</strong>; do <strong>not</strong> give routine perioperative antibiotics (AAO-HNS Tonsillectomy, 2019).</p></section></div></details>
+<details class="part part-2" id="part-ii-head-and-neck-oncology" data-defaultopen="0" data-spy><summary><span class="pl">Part</span><h1>PART II. HEAD AND NECK ONCOLOGY</h1><span class="chev">▸</span></summary><div class="part-body"><section class="subsec" id="neck-levels-i-to-vii" data-spy><h2>Neck levels I to VII</h2><ul>
+<li><strong>Ia</strong> submental; <strong>Ib</strong> submandibular. <strong>II</strong> upper jugular, split by the <strong>spinal accessory nerve (CN XI)</strong> into <strong>IIa (anterior)</strong> and <strong>IIb (posterior)</strong>. <strong>III</strong> mid-jugular; <strong>IV</strong> lower jugular. <strong>V</strong> posterior triangle, split into <strong>Va/Vb</strong> by the horizontal plane at the <strong>inferior border of the anterior cricoid arch</strong>. <strong>VI</strong> central compartment (hyoid to suprasternal notch, between the carotids). <strong>VII</strong> superior mediastinal.</li>
+<li><strong>Boundaries worth memorizing:</strong> the <strong>II/III</strong> border is the <strong>inferior border of the hyoid</strong> (the carotid bifurcation is a nearby surgical landmark, not the formal boundary); the <strong>III/IV</strong> border is the <strong>inferior border of the cricoid</strong>.</li>
+<li>Use the AHNS/AAO-HNS (Robbins) classification language; primary sites drain to predictable levels (oral cavity to I–III, oropharynx/larynx/hypopharynx to II–IV).</li>
+</ul><figure class="fig" id="fig-neck_levels"><div class="fig-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 420" role="img" aria-label="Neck nodal levels I to VII schematic">
+  <!-- jugular-chain column -->
+  <rect class="dx-box" x="118" y="24" width="120" height="374" rx="12" fill="#eef3f9" stroke="#d3dde8" stroke-width="1.5"/>
+  <!-- band dividers -->
+  <line class="dx-leader" x1="118" y1="92"  x2="238" y2="92"  stroke="#637284" stroke-width="1" stroke-dasharray="4 3"/>
+  <line class="dx-leader" x1="118" y1="158" x2="238" y2="158" stroke="#637284" stroke-width="1" stroke-dasharray="4 3"/>
+  <line class="dx-nerve"  x1="104" y1="244" x2="252" y2="244" stroke="#cf2f28" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <line class="dx-leader" x1="118" y1="320" x2="238" y2="320" stroke="#637284" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- level numerals -->
+  <text class="dx-key" x="178" y="64"  text-anchor="middle" font-size="18" font-weight="700" fill="#1257c2">I</text>
+  <text class="dx-key" x="178" y="130" text-anchor="middle" font-size="18" font-weight="700" fill="#1257c2">II</text>
+  <text class="dx-key" x="178" y="206" text-anchor="middle" font-size="18" font-weight="700" fill="#1257c2">III</text>
+  <text class="dx-key" x="178" y="288" text-anchor="middle" font-size="18" font-weight="700" fill="#1257c2">IV</text>
+  <text class="dx-key" x="178" y="366" text-anchor="middle" font-size="18" font-weight="700" fill="#1257c2">VII</text>
+  <!-- CN XI splitting level II -->
+  <line class="dx-nerve" x1="126" y1="150" x2="230" y2="108" stroke="#cf2f28" stroke-width="2"/>
+  <text class="dx-danger" x="120" y="146" font-size="9.5" fill="#cf2f28">CN XI : IIa/IIb</text>
+  <!-- cricoid boundary -->
+  <text class="dx-note" x="256" y="248" font-size="9.5" fill="#637284">cricoid (III/IV)</text>
+  <!-- VI central compartment (midline, left) with trachea cue -->
+  <rect class="dx-box" x="62" y="158" width="40" height="162" rx="8" fill="#eef3f9" stroke="#d3dde8" stroke-width="1.5"/>
+  <circle class="dx-vessel" cx="82" cy="206" r="9" fill="none" stroke="#16202e" stroke-width="1.5"/>
+  <circle class="dx-vessel" cx="82" cy="232" r="9" fill="none" stroke="#16202e" stroke-width="1.5"/>
+  <text class="dx-key" x="82" y="300" text-anchor="middle" font-size="14" font-weight="700" fill="#1257c2">VI</text>
+  <!-- V posterior triangle (right) -->
+  <path class="dx-box" d="M254 116 L314 330 L254 330 Z" fill="#eef3f9" stroke="#d3dde8" stroke-width="1.5"/>
+  <text class="dx-key" x="280" y="276" text-anchor="middle" font-size="14" font-weight="700" fill="#1257c2">V</text>
+</svg></div><figcaption><b>Neck nodal levels I to VII. </b>Cervical node levels (AHNS/Robbins). I submental and submandibular; II upper jugular, split into IIa and IIb by the spinal accessory nerve (CN XI); III mid-jugular; IV lower jugular, with the III/IV border at the inferior cricoid; V posterior triangle; VI central compartment (between the carotids, hyoid to sternal notch); VII superior mediastinum. The II/III border is the hyoid and carotid bifurcation. Schematic, not to scale.</figcaption></figure></section><section class="subsec" id="carotid-bifurcation-and-the-great-vessels" data-spy><h2>Carotid bifurcation and the great vessels</h2><ul>
+<li><strong><abbr class="gl" tabindex="0" title="common carotid artery">CCA</abbr> bifurcates at the upper border of the thyroid cartilage, about C3–C4</strong> (variable, C3–C5). <strong><abbr class="gl" tabindex="0" title="internal carotid artery">ICA</abbr> posterolateral, <abbr class="gl" tabindex="0" title="external carotid artery">ECA</abbr> anteromedial.</strong></li>
+<li><strong><abbr class="gl" tabindex="0" title="the dilated proximal internal carotid at the bifurcation; the usual plaque site">Carotid bulb</abbr></strong> = proximal ICA = the plaque site; seat of the <strong><abbr class="gl" tabindex="0" title="baroreceptor in the wall of the proximal internal carotid (CN IX)">carotid sinus</abbr></strong> (baroreceptor, mainly CN IX via the nerve of Hering) and <strong><abbr class="gl" tabindex="0" title="chemoreceptor at the carotid bifurcation (CN IX); origin of carotid-body paragangliomas">carotid body</abbr></strong> (chemoreceptor, <strong>CN IX and CN X</strong>; origin of carotid-body paragangliomas).</li>
+<li><strong>First ECA branch is the superior thyroid artery</strong>; the ICA has <strong>no branches in the neck</strong> (first is the ophthalmic, intracranial). <strong>ECA branches, “Some Anatomists Like Freaking Out Poor Medical Students”:</strong> Superior thyroid, Ascending pharyngeal, Lingual, Facial, Occipital, Posterior auricular, Maxillary, Superficial temporal. The maxillary gives the middle meningeal and the <strong>sphenopalatine</strong>, the “artery of epistaxis.”</li>
 </ul><figure class="fig" id="fig-carotid"><div class="fig-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" width="480" height="380" role="img" aria-labelledby="carotid-title">
   <title id="carotid-title">Carotid bifurcation: ICA posterolateral with no neck branches, ECA anteromedial and branchy, hypoglossal nerve crossing above</title>
   <!-- leader lines -->
@@ -331,7 +495,7 @@ td:has(>input.ck:checked){color:var(--muted)}
     <text class="dx-danger" x="326" y="194" font-size="13" font-weight="700">CN XII</text>
     <text class="dx-note" x="360" y="48" font-size="10.5">to skull base</text>
   </g>
-</svg></div><figcaption><b>Carotid bifurcation and the nerve at risk. </b>Bifurcation at about C3-C4 (upper border of the thyroid cartilage). The ICA runs posterolateral, stays smooth, and has no branches in the neck (its first branch, the ophthalmic, is intracranial); the ECA runs anteromedial and is branchy, first branch = superior thyroid artery (SALFOPMS). The carotid bulb (proximal ICA) is the plaque site and the seat of the carotid sinus and body (both CN IX). CN XII (hypoglossal) crosses both vessels about 2 cm above the bifurcation and is the classic nerve at risk; injury deviates the tongue toward the lesion.</figcaption><button aria-haspopup="dialog" class="plate-btn" data-plate="carotid" type="button"><span class="plate-btn-lab">View Netter plate (Plate 58)</span><span aria-hidden="true" class="plate-btn-ico">⤢</span></button></figure></section><section class="subsec" id="cranial-nerves-of-the-neck-your-ent-cranial-nerve-exam" data-spy><h2>Cranial nerves of the neck (your ENT cranial-nerve exam)</h2><div class="table-wrap"><table class="caption-top">
+</svg></div><figcaption><b>Carotid bifurcation and the nerve at risk. </b>Bifurcation at about C3-C4 (upper border of the thyroid cartilage). The ICA runs posterolateral, stays smooth, and has no branches in the neck (its first branch, the ophthalmic, is intracranial); the ECA runs anteromedial and is branchy, first branch = superior thyroid artery (SALFOPMS). The carotid bulb (proximal ICA) is the plaque site and the seat of the carotid sinus and body (both CN IX). CN XII (hypoglossal) crosses both vessels about 2 cm above the bifurcation and is the classic nerve at risk; injury deviates the tongue toward the lesion.</figcaption><button aria-haspopup="dialog" class="plate-btn" data-plate="carotid" type="button"><span class="plate-btn-lab">View Netter plate (Plate 58)</span><span aria-hidden="true" class="plate-btn-ico">⤢</span></button></figure></section><section class="subsec" id="cranial-nerves-of-the-neck-also-your-cranial-nerve-exam" data-spy><h2>Cranial nerves of the neck (also your cranial-nerve exam)</h2><div class="table-wrap"><table class="caption-top stack">
 <colgroup>
 <col style="width: 33%"/>
 <col style="width: 33%"/>
@@ -351,9 +515,9 @@ td:has(>input.ck:checked){color:var(--muted)}
 <td data-label="Where it is at risk">Crosses the ICA/ECA high, about 2 cm above the bifurcation</td>
 </tr>
 <tr class="even">
-<td data-label="Nerve"><strong>Vagus (X) / RLN fibers</strong></td>
+<td data-label="Nerve"><strong>Vagus (X) / <abbr class="gl" tabindex="0" title="recurrent laryngeal nerve">RLN</abbr> fibers</strong></td>
 <td data-label="Injury sign">Hoarseness</td>
-<td data-label="Where it is at risk">In the carotid sheath (posterior, between artery and <abbr class="gl" tabindex="0" title="internal jugular vein">IJV</abbr>); vagal injury, not direct RLN injury, is the commonest cause of post-CEA hoarseness</td>
+<td data-label="Where it is at risk">In the carotid sheath; postoperative hoarseness is usually <strong>vagal traction/neuropraxia</strong> (the cervical RLN is rarely cut) and is mostly transient</td>
 </tr>
 <tr class="odd">
 <td data-label="Nerve"><strong>Superior laryngeal n. (external br.)</strong></td>
@@ -368,20 +532,15 @@ td:has(>input.ck:checked){color:var(--muted)}
 <tr class="odd">
 <td data-label="Nerve"><strong>Glossopharyngeal (IX)</strong></td>
 <td data-label="Injury sign">Dysphagia</td>
-<td data-label="Where it is at risk">Very high ICA dissection</td>
+<td data-label="Where it is at risk">Very high dissection</td>
 </tr>
 <tr class="even">
 <td data-label="Nerve"><strong>Spinal accessory (XI)</strong></td>
 <td data-label="Injury sign">Trapezius weakness, shoulder drop</td>
-<td data-label="Where it is at risk">Posterior triangle, the <strong>neck-dissection nerve</strong></td>
-</tr>
-<tr class="odd">
-<td data-label="Nerve"><strong>Ansa cervicalis</strong></td>
-<td data-label="Injury sign">Minimal (strap motor)</td>
-<td data-label="Where it is at risk">On the anterior sheath; can be divided for high exposure</td>
+<td data-label="Where it is at risk">Posterior triangle, the <strong>neck-dissection nerve</strong>; splits levels IIa/IIb</td>
 </tr>
 </tbody>
-</table></div><p><strong>Carotid sheath = “<abbr class="gl" tabindex="0" title="Vein, Artery, Nerve (carotid sheath, lateral to medial)">VAN</abbr>”:</strong> <strong>V</strong>ein (IJV, lateral), <strong>A</strong>rtery (carotid, medial), <strong>N</strong>erve (vagus, posterior between them). The sympathetic chain runs behind the sheath, so injury there causes <strong><abbr class="gl" tabindex="0" title="ptosis, miosis, and anhidrosis from cervical sympathetic chain injury">Horner syndrome</abbr></strong>.</p><figure class="fig" id="fig-sheath"><div class="fig-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" width="480" height="380" role="img" aria-labelledby="sheath-title">
+</table></div><p><strong>Carotid sheath = “<abbr class="gl" tabindex="0" title="Vein, Artery, Nerve (carotid sheath, lateral to medial)">VAN</abbr>”:</strong> <strong>V</strong>ein (<abbr class="gl" tabindex="0" title="internal jugular vein">IJV</abbr>, lateral), <strong>A</strong>rtery (carotid, medial), <strong>N</strong>erve (vagus, posterior between them). The sympathetic chain runs behind the sheath, so injury there causes <strong><abbr class="gl" tabindex="0" title="ptosis, miosis, and anhidrosis from cervical sympathetic chain injury">Horner syndrome</abbr></strong>.</p><figure class="fig" id="fig-sheath"><div class="fig-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" width="480" height="380" role="img" aria-labelledby="sheath-title">
   <title id="sheath-title">Carotid sheath cross-section (VAN): carotid artery medial, internal jugular vein lateral, vagus nerve posterior in the groove between them, sympathetic chain behind the sheath</title>
   <!-- orientation cue -->
   <g font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
@@ -422,9 +581,19 @@ td:has(>input.ck:checked){color:var(--muted)}
     <text class="dx-danger" x="244" y="348" font-size="12.5" font-weight="700" text-anchor="middle">sympathetic chain</text>
     <text class="dx-note" x="244" y="363" font-size="10.5" text-anchor="middle">(behind -&gt; Horner)</text>
   </g>
-</svg></div><figcaption><b>Carotid sheath cross-section (VAN). </b>Axial view of the carotid sheath (VAN). The carotid artery sits medial, the internal jugular vein lateral, and the vagus nerve (CN X) posterior in the groove between them; the sympathetic chain lies behind the sheath, so injury there causes Horner syndrome. Vagal injury, not direct RLN injury, is the commonest cause of hoarseness after CEA.</figcaption><button aria-haspopup="dialog" class="plate-btn" data-plate="sheath" type="button"><span class="plate-btn-lab">View Netter plate (Plate 51)</span><span aria-hidden="true" class="plate-btn-ico">⤢</span></button></figure></section><section class="subsec" id="aortic-arch-arteria-lusoria-and-the-non-recurrent-nerve" data-spy><h2>Aortic arch, arteria lusoria, and the non-recurrent nerve</h2><ul>
-<li><strong>Arch branch order, “ABC”:</strong> brachiocephalic (innominate), then left common carotid, then left subclavian. A <strong>bovine arch</strong> (about 13–15%) is the commonest variant.</li>
-<li>An <strong>aberrant right subclavian artery (<abbr class="gl" tabindex="0" title="an aberrant right subclavian artery; paired with a non-recurrent right inferior laryngeal nerve">arteria lusoria</abbr>)</strong> causes <strong><abbr class="gl" tabindex="0" title="trouble swallowing from an aberrant right subclavian artery crossing behind the esophagus">dysphagia lusoria</abbr></strong> and is paired with a <strong>non-recurrent right inferior laryngeal nerve</strong>, a classic thyroid-surgery trap: on the right the nerve branches straight off the vagus instead of looping under the subclavian.</li>
+</svg></div><figcaption><b>Carotid sheath cross-section (VAN). </b>Axial view of the carotid sheath (VAN). The carotid artery sits medial, the internal jugular vein lateral, and the vagus nerve (CN X) posterior in the groove between them; the sympathetic chain lies behind the sheath, so injury there causes Horner syndrome. Vagal injury, not direct RLN injury, is the commonest cause of hoarseness after CEA.</figcaption><button aria-haspopup="dialog" class="plate-btn" data-plate="sheath" type="button"><span class="plate-btn-lab">View Netter plate (Plate 51)</span><span aria-hidden="true" class="plate-btn-ico">⤢</span></button></figure></section><section class="subsec" id="deep-neck-spaces" data-spy><h2>Deep neck spaces</h2><ul>
+<li><strong>Retropharyngeal space:</strong> between the buccopharyngeal (visceral) fascia and the alar fascia, from the skull base down to about the <strong>carina (T4, variable)</strong>; the site of pediatric retropharyngeal abscess.</li>
+<li><strong>Danger space:</strong> between the <strong>alar and prevertebral fascia</strong>, running from the <strong>skull base to the diaphragm</strong>; this is the route to mediastinitis (the high-yield distinction from the retropharyngeal space).</li>
+<li><strong>Prevertebral space:</strong> between the prevertebral fascia and the vertebral bodies, the length of the spine.</li>
+<li><strong>Parapharyngeal space</strong>, divided by the styloid process: <strong>pre-styloid</strong> holds fat and the deep parotid (the <strong><abbr class="gl" tabindex="0" title="the commonest salivary tumor; a pre-styloid parapharyngeal mass is usually a deep-parotid pleomorphic adenoma">pleomorphic adenoma</abbr></strong> lives here); <strong>post-styloid (carotid space)</strong> holds the <strong>carotid sheath (ICA, IJV, vagus/CN X, sympathetic chain; CN IX, XI, XII pass only at the skull base)</strong>, where <strong>paragangliomas and schwannomas</strong> arise.</li>
+</ul></section><section class="subsec" id="larynx-rln-versus-sln" data-spy><h2>Larynx: RLN versus SLN</h2><ul>
+<li><strong><abbr class="gl" tabindex="0" title="superior laryngeal nerve">SLN</abbr> external branch</strong> to the <strong>cricothyroid</strong> muscle: tenses and raises pitch (the “opera singer” nerve); injury causes voice fatigue and loss of high pitch. <strong>SLN internal branch</strong> is <strong>sensory</strong> to the supraglottis; injury risks <strong>aspiration</strong>.</li>
+<li><strong>RLN</strong> supplies <strong>all intrinsic laryngeal muscles except the cricothyroid</strong>. The <strong>posterior cricoarytenoid is the only abductor</strong> (the cord-opener).</li>
+<li>The classic teaching that an isolated RLN injury leaves the cord <strong>paramedian</strong> and a combined RLN + SLN injury leaves it <strong>intermediate (cadaveric)</strong> is the traditional Semon/Wagner-Grossman rule; final cord position is <strong>clinically variable</strong>, so present it as classic teaching, not a hard fact.</li>
+</ul></section><section class="subsec" id="thyroid-and-parathyroid-landmarks" data-spy><h2>Thyroid and parathyroid landmarks</h2><ul>
+<li><strong>RLN</strong> runs in the <strong>tracheoesophageal groove</strong>; its relationship to the <strong>inferior thyroid artery is variable</strong> (do not state a fixed deep/superficial rule). The nerve is most at risk near <strong>Berry’s ligament</strong> at the posterior superior pole.</li>
+<li><strong>Non-recurrent right inferior laryngeal nerve</strong> occurs essentially <strong>only on the right</strong>, paired with an <strong>aberrant right subclavian artery (<abbr class="gl" tabindex="0" title="an aberrant right subclavian artery; paired with a non-recurrent right inferior laryngeal nerve">arteria lusoria</abbr>)</strong> and <abbr class="gl" tabindex="0" title="trouble swallowing from an aberrant right subclavian artery crossing behind the esophagus">dysphagia lusoria</abbr>.</li>
+<li><strong>Superior parathyroids</strong> come from the <strong>4th pouch</strong> (more constant, posterolateral, above the ITA-RLN crossing); <strong>inferior parathyroids</strong> from the <strong>3rd pouch</strong> (with the thymus, more variable). <strong>Both</strong> parathyroids’ blood supply is predominantly the <strong>inferior thyroid artery</strong>.</li>
 </ul><figure class="fig" id="fig-aortic_arch"><div class="fig-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 410" width="520" height="410" role="img" aria-labelledby="arch-title">
   <title id="arch-title">Aortic arch branch order A-B-C: brachiocephalic (splitting into right subclavian and right common carotid), then left common carotid, then left subclavian</title>
   <!-- leader lines -->
@@ -466,8 +635,56 @@ td:has(>input.ck:checked){color:var(--muted)}
   <g font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
     <text class="dx-note" x="260" y="398" font-size="11" text-anchor="middle">order = A-B-C (brachiocephalic, L common carotid, L subclavian); bovine variant most common</text>
   </g>
-</svg></div><figcaption><b>Aortic arch branch order (ABC). </b>Aortic arch great vessels in order, A-B-C: brachiocephalic (innominate) first, then left common carotid, then left subclavian. The brachiocephalic splits into the right subclavian and right common carotid (the right common carotid has no separate aortic origin). A bovine arch is the commonest variant. An aberrant right subclavian (arteria lusoria) is paired with a non-recurrent right inferior laryngeal nerve, a classic thyroid-surgery trap.</figcaption><button aria-haspopup="dialog" class="plate-btn" data-plate="aortic_arch" type="button"><span class="plate-btn-lab">View Netter plate (Plate 220)</span><span aria-hidden="true" class="plate-btn-ico">⤢</span></button></figure></section></div></details>
-<details class="part part-2" id="part-ii-or-survival-and-microvascular-transfer" data-defaultopen="0" data-spy><summary><span class="pl">Part</span><h1>PART II. OR SURVIVAL AND MICROVASCULAR TRANSFER</h1><span class="chev">▸</span></summary><div class="part-body"><section class="subsec" id="instruments-and-suture-the-free-flap-transfer" data-spy><h2>Instruments and suture (the free-flap transfer)</h2><div class="table-wrap"><table class="caption-top">
+</svg></div><figcaption><b>Aortic arch branch order (ABC). </b>Aortic arch great vessels in order, A-B-C: brachiocephalic (innominate) first, then left common carotid, then left subclavian. The brachiocephalic splits into the right subclavian and right common carotid (the right common carotid has no separate aortic origin). A bovine arch is the commonest variant. An aberrant right subclavian (arteria lusoria) is paired with a non-recurrent right inferior laryngeal nerve, a classic thyroid-surgery trap.</figcaption><button aria-haspopup="dialog" class="plate-btn" data-plate="aortic_arch" type="button"><span class="plate-btn-lab">View Netter plate (Plate 220)</span><span aria-hidden="true" class="plate-btn-ico">⤢</span></button></figure></section><section class="subsec" id="free-flaps-for-reconstruction" data-spy><h2>Free flaps for reconstruction</h2><div class="table-wrap"><table class="caption-top stack">
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Flap</th>
+<th>Pedicle</th>
+<th>Use / safety step</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-label="Flap"><strong>Radial forearm</strong></td>
+<td data-label="Pedicle">Radial artery + venae comitantes / cephalic vein</td>
+<td data-label="Use / safety step">Thin, pliable lining for oral cavity/oropharynx; <strong><abbr class="gl" tabindex="0" title="bedside test that the ulnar artery alone can perfuse the hand before radial access or harvest">Allen test</abbr></strong> first</td>
+</tr>
+<tr class="even">
+<td data-label="Flap"><strong>Fibula</strong></td>
+<td data-label="Pedicle">Peroneal artery</td>
+<td data-label="Use / safety step">Workhorse for the <strong>mandible</strong> (long bone segment); confirm the peroneal is not the dominant leg vessel (exam + <strong>CT angiography</strong>)</td>
+</tr>
+<tr class="odd">
+<td data-label="Flap"><strong>Anterolateral thigh (<abbr class="gl" tabindex="0" title="anterolateral thigh (free flap)">ALT</abbr>)</strong></td>
+<td data-label="Pedicle">Descending branch of the lateral circumflex femoral artery</td>
+<td data-label="Use / safety step">Bulky soft-tissue workhorse</td>
+</tr>
+</tbody>
+</table></div><ul>
+<li>Flaps <strong>commonly</strong> anastomose to <strong>ECA branches (superior thyroid or facial)</strong> with <strong>internal jugular venous outflow</strong> (end-to-side IJV, or a branch/comitans vein). Ischemia tolerance is approximate and tissue-dependent (bone tolerates less than fasciocutaneous); do not quote a single hard number.</li>
+</ul></section></div></details>
+<details class="part part-3" id="part-iii-pediatric-ent" data-defaultopen="0" data-spy><summary><span class="pl">Part</span><h1>PART III. PEDIATRIC ENT</h1><span class="chev">▸</span></summary><div class="part-body"><section class="subsec" id="tonsils-and-adenoids" data-spy><h2>Tonsils and adenoids</h2><ul>
+<li><strong>Tonsillectomy for recurrent throat infection, <abbr class="gl" tabindex="0" title="the episode thresholds that justify tonsillectomy for recurrent throat infection">Paradise criteria</abbr>:</strong> <strong>≥7 episodes in 1 year, ≥5/year for 2 years, or ≥3/year for 3 years</strong> (AAO-HNS Tonsillectomy, 2019). <strong>Obstructive sleep-disordered breathing</strong> is the other major indication and is now the commonest reason for the operation.</li>
+<li>Watchful waiting is appropriate for recurrent infection that does not meet Paradise. Give perioperative <strong>dexamethasone</strong>; avoid routine perioperative antibiotics.</li>
+</ul></section><section class="subsec" id="ear-tubes-and-effusion" data-spy><h2>Ear: tubes and effusion</h2><ul>
+<li><strong>Tympanostomy tubes</strong> (AAO-HNS, 2022): for <strong>recurrent acute otitis media</strong> (≥3 in 6 months, or ≥4 in 12 months with one recent), offer tubes <strong>only if a middle-ear effusion is present</strong> at assessment (do not place if no effusion); for <strong>chronic effusion ≥3 months</strong> (<strong>unilateral or bilateral</strong>) with a <strong>documented hearing difficulty</strong> or other effusion-related symptoms.</li>
+<li>Otitis media with effusion is otherwise often observed; document hearing.</li>
+</ul></section><section class="subsec" id="pediatric-airway-and-stridor" data-spy><h2>Pediatric airway and stridor</h2><ul>
+<li><strong><abbr class="gl" tabindex="0" title="floppy supraglottic tissue causing inspiratory stridor in infants, usually self-resolving">Laryngomalacia</abbr></strong> is the <strong>most common congenital cause of stridor</strong>: <strong>inspiratory</strong> stridor, worse supine and with feeding, usually self-resolving by 12–18 months; severe cases get supraglottoplasty.</li>
+<li><strong><abbr class="gl" tabindex="0" title="viral laryngotracheobronchitis with a barky cough and subglottic narrowing (steeple sign)">Croup</abbr> (laryngotracheobronchitis):</strong> subglottic, <strong>barky cough</strong>, <strong>steeple sign</strong>; viral; steroids ± nebulized epinephrine.</li>
+<li><strong>Foreign body:</strong> sudden choking, asymmetric exam; bronchoscopy.</li>
+<li>Remember <strong>epiglottitis</strong> (now rarer in vaccinated children) and <strong>bacterial tracheitis</strong> on the differential for a toxic child with stridor.</li>
+<li>The cricoid is the <strong>narrowest fixed ring</strong> of the pediatric airway (classic teaching; in-vivo imaging suggests the glottis is functionally narrowest), which is why subglottic pathology and tube sizing matter.</li>
+</ul></section></div></details>
+<details class="part part-4" id="part-iv-or-survival-and-ai-rebuild" data-defaultopen="0" data-spy><summary><span class="pl">Part</span><h1>PART IV. OR SURVIVAL AND AI REBUILD</h1><span class="chev">▸</span></summary><div class="part-body"><section class="subsec" id="the-behaviors-that-are-the-evaluation" data-spy><h2>The behaviors that are the evaluation</h2><ul>
+<li><strong>Suction without obscuring the field</strong>, follow suture, cut on the flat of the scissors at the surgeon’s knot, retract steadily, and <strong>load needles</strong> correctly. Anticipate the next move. These intangibles are most of what an acting intern is graded on.</li>
+<li>Know the case before you scrub: indication, the steps, and the one or two numbers you might be asked.</li>
+</ul></section><section class="subsec" id="instruments-and-suture" data-spy><h2>Instruments and suture</h2><div class="table-wrap"><table class="caption-top">
 <colgroup>
 <col style="width: 50%"/>
 <col style="width: 50%"/>
@@ -493,11 +710,11 @@ td:has(>input.ck:checked){color:var(--muted)}
 </tr>
 <tr class="even">
 <td data-label="Instrument"><strong>Potts scissors</strong></td>
-<td data-label="Role">extend the arteriotomy or venotomy</td>
+<td data-label="Role">extend an arteriotomy or venotomy</td>
 </tr>
 <tr class="odd">
-<td data-label="Instrument"><strong>Vessel loops</strong></td>
-<td data-label="Role">single = retract, double = occlude</td>
+<td data-label="Instrument"><strong>Freer / Cottle elevator</strong></td>
+<td data-label="Role">raise mucoperichondrial and subperiosteal flaps (septoplasty, sinus, ear)</td>
 </tr>
 <tr class="even">
 <td data-label="Instrument"><strong>Weitlaner / Gelpi</strong></td>
@@ -505,14 +722,56 @@ td:has(>input.ck:checked){color:var(--muted)}
 </tr>
 </tbody>
 </table></div><ul>
-<li><strong>Suture for a microvascular anastomosis:</strong> permanent <strong>monofilament (nylon or Prolene) on a tapered needle</strong>, with sizes stepping down to <strong>8-0, 9-0, 10-0</strong> for free-flap vessels. Double-armed, <strong><abbr class="gl" tabindex="0" title="sliding a graft or vessel down pre-placed sutures to sew a deep posterior anastomotic wall">parachute</abbr> the posterior wall</strong>, forehand one wall and backhand the other, lay throws flat with constant tension, <strong><abbr class="gl" tabindex="0" title="briefly releasing a clamp to flush debris out before tying the final anastomotic suture">back-bleed</abbr> before the final tie</strong>, then confirm flow.</li>
-</ul></section><section class="subsec" id="the-two-genuine-vascular-to-ent-transfer-clusters" data-spy><h2>The two genuine vascular-to-ENT transfer clusters</h2><ol type="1">
-<li><strong>The carotid and neck block.</strong> A carotid exposure is, anatomically, a neck dissection: the bifurcation, the ICA/ECA, the cranial nerves above, the sheath (VAN), and the <strong>IJV (the free-flap recipient vein)</strong>. Microvascular free flaps share this turf: radial-forearm, fibula, and <abbr class="gl" tabindex="0" title="anterolateral thigh (free flap)">ALT</abbr> flaps anastomose to <strong>ECA branches (facial, superior thyroid)</strong> with <strong>jugular venous outflow</strong>.</li>
-<li><strong>Fine-tissue and monofilament skill.</strong> Atraumatic handling under loupes or the scope, no-touch intima, slick monofilament technique, and suction as a skill (clear the field without obscuring the surgeon’s view). These are exactly the skills the acting internship rewards.</li>
-</ol><div class="callout emergency"><span class="lab">Emergency</span>
-<p><strong>Airway emergency.</strong> An expanding neck hematoma after neck or thyroid surgery is an <strong>airway emergency</strong>: open the incision at the bedside to decompress the hematoma before moving to definitive control in the OR.</p>
-</div></section></div></details>
-<details class="part part-3" id="part-iii-self-test-pimp-qa" data-defaultopen="0" data-spy><summary><span class="pl">Part</span><h1>PART III. SELF-TEST: PIMP Q&A</h1><span class="chev">▸</span></summary><div class="part-body"><p class="quizhint">Quiz mode is on: tap a blurred answer to reveal it.</p><div class="prelude"><p><em>Cover the answer column to self-test.</em></p></div><section class="subsec" id="head-neck-anatomy" data-spy><h2>Head &amp; neck anatomy</h2><div class="table-wrap"><table class="caption-top qa">
+<li><strong>Microvascular suture:</strong> permanent <strong>monofilament (nylon or Prolene) on a tapered needle</strong>, stepping down to <strong>8-0, 9-0, 10-0</strong> for free-flap vessels. Double-armed, <strong><abbr class="gl" tabindex="0" title="sliding a graft or vessel down pre-placed sutures to sew a deep posterior anastomotic wall">parachute</abbr> the posterior wall</strong>, lay throws flat with constant tension, <strong><abbr class="gl" tabindex="0" title="briefly releasing a clamp to flush debris out before tying the final anastomotic suture">back-bleed</abbr> before the final tie</strong>, then confirm flow.</li>
+</ul></section><section class="subsec" id="the-two-genuine-transfer-clusters-from-vascular" data-spy><h2>The two genuine transfer clusters from vascular</h2><ol type="1">
+<li><strong>The carotid and neck block.</strong> A carotid exposure is anatomically a neck dissection: the bifurcation, the ICA/ECA, the cranial nerves above, the sheath (VAN), and the <strong>IJV (the free-flap recipient vein)</strong>.</li>
+<li><strong>Fine-tissue and monofilament skill.</strong> Atraumatic handling under loupes or the scope, no-touch intima, and <strong>suction as a skill</strong>.</li>
+</ol></section><section class="subsec" id="knots-and-graduated-responsibility" data-spy><h2>Knots and graduated responsibility</h2><ul>
+<li>Practice nightly: a flat, square, snug <strong>two-handed knot</strong> and an <strong>instrument tie</strong>, both without looking; then needle loading and a simple closure.</li>
+<li>Earn responsibility a rung at a time, asked in a calm moment, not mid-anastomosis: <strong>camera/suction, then retract, then cut, then first-assist, then a few ties, then close skin.</strong> After you do something, ask what to change next time.</li>
+</ul></section></div></details>
+<details class="part part-5" id="part-v-self-test-pimp-qa" data-defaultopen="0" data-spy><summary><span class="pl">Part</span><h1>PART V. SELF-TEST: PIMP Q&A</h1><span class="chev">▸</span></summary><div class="part-body"><p class="quizhint">Quiz mode is on: tap a blurred answer to reveal it.</p><div class="prelude"><p><em>Cover the answer column to self-test. This is a scaffold of the questions actually asked on the service; verify each answer as you study.</em></p></div><section class="subsec" id="emergencies-and-airway" data-spy><h2>Emergencies and airway</h2><div class="table-wrap"><table class="caption-top qa">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Q</th>
+<th>A</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-label="Q">Landmark for an emergency surgical airway?</td>
+<td class="ans" data-label="A" tabindex="0">The <strong>cricothyroid membrane</strong>, between the thyroid and cricoid cartilage</td>
+</tr>
+<tr class="even">
+<td data-label="Q">Why avoid a surgical cricothyrotomy in a young child?</td>
+<td class="ans" data-label="A" tabindex="0">The cricoid is the narrowest point and the membrane is tiny; use a <strong>needle cric + jet ventilation</strong></td>
+</tr>
+<tr class="odd">
+<td data-label="Q">Typical timing of a secondary post-tonsillectomy bleed?</td>
+<td class="ans" data-label="A" tabindex="0"><strong>POD 5–10</strong> (eschar separation), peak around POD 7</td>
+</tr>
+<tr class="even">
+<td data-label="Q">Which way does the uvula deviate in a peritonsillar abscess?</td>
+<td class="ans" data-label="A" tabindex="0"><strong>Away</strong> from the abscess</td>
+</tr>
+<tr class="odd">
+<td data-label="Q">Why does ACE-inhibitor angioedema not respond to the usual allergy cocktail?</td>
+<td class="ans" data-label="A" tabindex="0">It is <strong>bradykinin-mediated</strong>, not histamine-mediated; protect the airway</td>
+</tr>
+<tr class="even">
+<td data-label="Q">Audiometric definition of sudden <abbr class="gl" tabindex="0" title="sensorineural hearing loss">SNHL</abbr>?</td>
+<td class="ans" data-label="A" tabindex="0"><strong>≥30 dB over 3 contiguous frequencies within 72 hours</strong>; get an <strong>MRI</strong></td>
+</tr>
+<tr class="odd">
+<td data-label="Q">First imaging for sudden SNHL, and what are you ruling out?</td>
+<td class="ans" data-label="A" tabindex="0"><strong>MRI</strong>, to exclude <strong>retrocochlear</strong> pathology (vestibular schwannoma)</td>
+</tr>
+</tbody>
+</table></div></section><section class="subsec" id="head-and-neck-anatomy" data-spy><h2>Head and neck anatomy</h2><div class="table-wrap"><table class="caption-top qa">
 <colgroup>
 <col style="width: 50%"/>
 <col style="width: 50%"/>
@@ -537,28 +796,103 @@ td:has(>input.ck:checked){color:var(--muted)}
 <td class="ans" data-label="A" tabindex="0"><strong>VAN:</strong> carotid (medial), IJV (lateral), vagus (posterior between them)</td>
 </tr>
 <tr class="even">
-<td data-label="Q">Tongue deviation with a hypoglossal (XII) injury?</td>
-<td class="ans" data-label="A" tabindex="0"><strong>Toward</strong> the side of the lesion</td>
+<td data-label="Q">What splits neck level II into IIa and IIb?</td>
+<td class="ans" data-label="A" tabindex="0">The <strong>spinal accessory nerve (CN XI)</strong></td>
 </tr>
 <tr class="odd">
-<td data-label="Q">Commonest cause of hoarseness after a carotid <abbr class="gl" tabindex="0" title="surgically peeling out atherosclerotic plaque with the diseased inner artery layer">endarterectomy</abbr>?</td>
-<td class="ans" data-label="A" tabindex="0"><strong>Vagal</strong> stretch, not direct RLN injury</td>
+<td data-label="Q">Where does the danger space run?</td>
+<td class="ans" data-label="A" tabindex="0"><strong>Skull base to the diaphragm</strong> (between alar and prevertebral fascia)</td>
 </tr>
 <tr class="even">
-<td data-label="Q">Why is the left RLN more vulnerable to a chest process?</td>
-<td class="ans" data-label="A" tabindex="0">It loops under the <strong>aortic arch</strong> (long mediastinal course), so a left mediastinal or aortic lesion causes hoarseness (cardiovocal / <abbr class="gl" tabindex="0" title="hoarseness from left recurrent laryngeal nerve stretch by a mediastinal or aortic process">Ortner</abbr>)</td>
+<td data-label="Q">Only abductor of the vocal cords?</td>
+<td class="ans" data-label="A" tabindex="0"><strong>Posterior cricoarytenoid</strong> (RLN)</td>
 </tr>
 <tr class="odd">
-<td data-label="Q">Artery of epistaxis?</td>
-<td class="ans" data-label="A" tabindex="0"><strong>Sphenopalatine</strong> (terminal branch of the maxillary artery)</td>
+<td data-label="Q">Blood supply to both parathyroid glands?</td>
+<td class="ans" data-label="A" tabindex="0">Predominantly the <strong>inferior thyroid artery</strong></td>
 </tr>
 <tr class="even">
-<td data-label="Q">An aberrant right subclavian artery is paired with which nerve variant?</td>
-<td class="ans" data-label="A" tabindex="0">A <strong>non-recurrent right inferior laryngeal nerve</strong> (arteria lusoria)</td>
+<td data-label="Q">Five terminal (parotid-plexus) branches of the facial nerve?</td>
+<td class="ans" data-label="A" tabindex="0">Temporal, Zygomatic, Buccal, Marginal mandibular, Cervical (also the proximal posterior auricular branch)</td>
+</tr>
+</tbody>
+</table></div></section><section class="subsec" id="pediatrics" data-spy><h2>Pediatrics</h2><div class="table-wrap"><table class="caption-top qa">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Q</th>
+<th>A</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-label="Q">Most common congenital cause of stridor?</td>
+<td class="ans" data-label="A" tabindex="0"><strong>Laryngomalacia</strong> (inspiratory, worse supine/feeding)</td>
+</tr>
+<tr class="even">
+<td data-label="Q">Paradise criteria for tonsillectomy?</td>
+<td class="ans" data-label="A" tabindex="0"><strong>≥7 in 1 year, ≥5/year × 2 years, ≥3/year × 3 years</strong></td>
+</tr>
+<tr class="odd">
+<td data-label="Q">Tube criteria for recurrent <abbr class="gl" tabindex="0" title="acute otitis media">AOM</abbr>?</td>
+<td class="ans" data-label="A" tabindex="0"><strong>≥3 episodes in 6 months or ≥4 in 12 months</strong> with effusion (AAO-HNS, 2022)</td>
+</tr>
+<tr class="even">
+<td data-label="Q">Narrowest part of the pediatric airway?</td>
+<td class="ans" data-label="A" tabindex="0">Classic answer the <strong>cricoid</strong> (narrowest fixed ring); note imaging suggests the glottis is functionally narrowest</td>
+</tr>
+<tr class="odd">
+<td data-label="Q">Steeple sign and a barky cough?</td>
+<td class="ans" data-label="A" tabindex="0"><strong>Croup</strong> (subglottic)</td>
 </tr>
 </tbody>
 </table></div></section></div></details>
-<details class="part part-4" id="part-iv-abbreviations" data-defaultopen="0" data-spy><summary><span class="pl">Part</span><h1>PART IV. ABBREVIATIONS</h1><span class="chev">▸</span></summary><div class="part-body"><section class="subsec" id="abbreviations" data-spy><h2>Abbreviations</h2><div class="table-wrap"><table class="caption-top glossary">
+<details class="part part-6" id="part-vi-rotation-plan" data-defaultopen="0" data-spy><summary><span class="pl">Part</span><h1>PART VI. ROTATION PLAN</h1><span class="chev">▸</span></summary><div class="part-body"><section class="subsec" id="daily-rhythm" data-spy><h2>Daily rhythm</h2><ul>
+<li><strong>Pre-round</strong> on your patients: airway, drains, flap checks (color, capillary refill, Doppler signal, temperature), pain, intake/output, voice and swallow.</li>
+<li><strong>In the OR</strong>, scrub every case you can, know the steps, and own suction and retraction.</li>
+<li><strong>In clinic</strong>, learn the <strong>headlight, scope, and microscope</strong> exams and how to read an audiogram.</li>
+<li><strong>At night</strong>, 20 minutes: knots, then one section of this guide, then tomorrow’s cases.</li>
+</ul></section><section class="subsec" id="resources" data-spy><h2>Resources</h2><div class="table-wrap"><table class="caption-top">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Resource</th>
+<th>Use it for</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-label="Resource"><strong>Pasha, Otolaryngology Clinical Reference Guide</strong></td>
+<td data-label="Use it for">fast high-yield review and pimp prep</td>
+</tr>
+<tr class="even">
+<td data-label="Resource"><strong>ENT Secrets</strong></td>
+<td data-label="Use it for">question-and-answer reinforcement</td>
+</tr>
+<tr class="odd">
+<td data-label="Resource"><strong>AAO-HNSF Primary Care Otolaryngology Handbook</strong></td>
+<td data-label="Use it for">clinic-level basics</td>
+</tr>
+<tr class="even">
+<td data-label="Resource"><strong>Current AAO-HNS clinical practice guidelines</strong></td>
+<td data-label="Use it for">the authority for management questions (cite the year)</td>
+</tr>
+<tr class="odd">
+<td data-label="Resource"><strong>Netter atlases</strong></td>
+<td data-label="Use it for">the anatomy plates behind the diagrams here</td>
+</tr>
+</tbody>
+</table></div></section><section class="subsec" id="micro-habits" data-spy><h2>Micro-habits</h2><ul>
+<li><input class="ck" data-ck="c0" type="checkbox"/>Each night, mark off the day’s cards and read one new section.</li>
+<li><input class="ck" data-ck="c1" type="checkbox"/>After every case, write down the one fact you were asked and did not know.</li>
+</ul></section></div></details>
+<details class="part part-7" id="part-vii-abbreviations" data-defaultopen="0" data-spy><summary><span class="pl">Part</span><h1>PART VII. ABBREVIATIONS</h1><span class="chev">▸</span></summary><div class="part-body"><section class="subsec" id="abbreviations" data-spy><h2>Abbreviations</h2><div class="table-wrap"><table class="caption-top glossary">
 <thead>
 <tr class="header">
 <th>Abbr</th>
@@ -567,20 +901,28 @@ td:has(>input.ck:checked){color:var(--muted)}
 </thead>
 <tbody>
 <tr class="odd">
+<td data-label="Abbr">AAO-HNS</td>
+<td data-label="Meaning">American Academy of Otolaryngology–Head and Neck Surgery</td>
+</tr>
+<tr class="even">
 <td data-label="Abbr">ALT</td>
 <td data-label="Meaning">anterolateral thigh (free flap)</td>
+</tr>
+<tr class="odd">
+<td data-label="Abbr">AOM</td>
+<td data-label="Meaning">acute otitis media</td>
 </tr>
 <tr class="even">
 <td data-label="Abbr">CCA</td>
 <td data-label="Meaning">common carotid artery</td>
 </tr>
 <tr class="odd">
-<td data-label="Abbr">CEA</td>
-<td data-label="Meaning">carotid endarterectomy</td>
-</tr>
-<tr class="even">
 <td data-label="Abbr">CN</td>
 <td data-label="Meaning">cranial nerve</td>
+</tr>
+<tr class="even">
+<td data-label="Abbr">CPG</td>
+<td data-label="Meaning">clinical practice guideline</td>
 </tr>
 <tr class="odd">
 <td data-label="Abbr">ECA</td>
@@ -591,20 +933,60 @@ td:has(>input.ck:checked){color:var(--muted)}
 <td data-label="Meaning">ear, nose, and throat (otolaryngology)</td>
 </tr>
 <tr class="odd">
+<td data-label="Abbr">ETT</td>
+<td data-label="Meaning">endotracheal tube</td>
+</tr>
+<tr class="even">
+<td data-label="Abbr">FESS</td>
+<td data-label="Meaning">functional endoscopic sinus surgery</td>
+</tr>
+<tr class="odd">
+<td data-label="Abbr">HB</td>
+<td data-label="Meaning">House-Brackmann (facial nerve grading)</td>
+</tr>
+<tr class="even">
 <td data-label="Abbr">ICA</td>
 <td data-label="Meaning">internal carotid artery</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td data-label="Abbr">IJV</td>
 <td data-label="Meaning">internal jugular vein</td>
 </tr>
+<tr class="even">
+<td data-label="Abbr">ITA</td>
+<td data-label="Meaning">inferior thyroid artery</td>
+</tr>
 <tr class="odd">
+<td data-label="Abbr">OME</td>
+<td data-label="Meaning">otitis media with effusion</td>
+</tr>
+<tr class="even">
 <td data-label="Abbr">OR</td>
 <td data-label="Meaning">operating room</td>
 </tr>
+<tr class="odd">
+<td data-label="Abbr">OSA</td>
+<td data-label="Meaning">obstructive sleep apnea</td>
+</tr>
 <tr class="even">
+<td data-label="Abbr">PCA</td>
+<td data-label="Meaning">posterior cricoarytenoid (muscle)</td>
+</tr>
+<tr class="odd">
+<td data-label="Abbr">POD</td>
+<td data-label="Meaning">postoperative day</td>
+</tr>
+<tr class="even">
+<td data-label="Abbr">PTA</td>
+<td data-label="Meaning">peritonsillar abscess</td>
+</tr>
+<tr class="odd">
 <td data-label="Abbr">RLN</td>
 <td data-label="Meaning">recurrent laryngeal nerve</td>
+</tr>
+<tr class="even">
+<td data-label="Abbr">RPA</td>
+<td data-label="Meaning">retropharyngeal abscess</td>
 </tr>
 <tr class="odd">
 <td data-label="Abbr">SCM</td>
@@ -613,6 +995,14 @@ td:has(>input.ck:checked){color:var(--muted)}
 <tr class="even">
 <td data-label="Abbr">SLN</td>
 <td data-label="Meaning">superior laryngeal nerve</td>
+</tr>
+<tr class="odd">
+<td data-label="Abbr">SNHL</td>
+<td data-label="Meaning">sensorineural hearing loss</td>
+</tr>
+<tr class="even">
+<td data-label="Abbr">SPA</td>
+<td data-label="Meaning">sphenopalatine artery</td>
 </tr>
 <tr class="odd">
 <td data-label="Abbr">VAN</td>
@@ -633,7 +1023,7 @@ td:has(>input.ck:checked){color:var(--muted)}
 <tbody>
 <tr class="odd">
 <td data-label="Trial">(to be added)</td>
-<td data-label="Full name">subspecialty trials and named criteria land with each later drop</td>
+<td data-label="Full name">named criteria and trials land with each later subspecialty drop</td>
 </tr>
 </tbody>
 </table></div></section></div></details>
@@ -641,7 +1031,7 @@ td:has(>input.ck:checked){color:var(--muted)}
 </div>
 <button id="totop" aria-label="Back to top">↑</button>
 <div id="tip" role="tooltip" hidden></div>
-<script id="cards" type="application/json">[{"q": "First branch of the ECA?", "a": "Superior thyroid artery (SALFOPMS)"}, {"q": "ICA branches in the neck?", "a": "None (the first is the ophthalmic, intracranial)"}, {"q": "Carotid sheath contents?", "a": "VAN: carotid (medial), IJV (lateral), vagus (posterior between them)"}, {"q": "Tongue deviation with a hypoglossal (XII) injury?", "a": "Toward the side of the lesion"}, {"q": "Commonest cause of hoarseness after a carotid endarterectomy ?", "a": "Vagal stretch, not direct RLN injury"}, {"q": "Why is the left RLN more vulnerable to a chest process?", "a": "It loops under the aortic arch (long mediastinal course), so a left mediastinal or aortic lesion causes hoarseness (cardiovocal / Ortner )"}, {"q": "Artery of epistaxis?", "a": "Sphenopalatine (terminal branch of the maxillary artery)"}, {"q": "An aberrant right subclavian artery is paired with which nerve variant?", "a": "A non-recurrent right inferior laryngeal nerve (arteria lusoria)"}]</script>
+<script id="cards" type="application/json">[{"q": "Landmark for an emergency surgical airway?", "a": "The cricothyroid membrane , between the thyroid and cricoid cartilage"}, {"q": "Why avoid a surgical cricothyrotomy in a young child?", "a": "The cricoid is the narrowest point and the membrane is tiny; use a needle cric + jet ventilation"}, {"q": "Typical timing of a secondary post-tonsillectomy bleed?", "a": "POD 5–10 (eschar separation), peak around POD 7"}, {"q": "Which way does the uvula deviate in a peritonsillar abscess?", "a": "Away from the abscess"}, {"q": "Why does ACE-inhibitor angioedema not respond to the usual allergy cocktail?", "a": "It is bradykinin-mediated , not histamine-mediated; protect the airway"}, {"q": "Audiometric definition of sudden SNHL ?", "a": "≥30 dB over 3 contiguous frequencies within 72 hours ; get an MRI"}, {"q": "First imaging for sudden SNHL, and what are you ruling out?", "a": "MRI , to exclude retrocochlear pathology (vestibular schwannoma)"}, {"q": "First branch of the ECA?", "a": "Superior thyroid artery (SALFOPMS)"}, {"q": "ICA branches in the neck?", "a": "None (the first is the ophthalmic, intracranial)"}, {"q": "Carotid sheath contents?", "a": "VAN: carotid (medial), IJV (lateral), vagus (posterior between them)"}, {"q": "What splits neck level II into IIa and IIb?", "a": "The spinal accessory nerve (CN XI)"}, {"q": "Where does the danger space run?", "a": "Skull base to the diaphragm (between alar and prevertebral fascia)"}, {"q": "Only abductor of the vocal cords?", "a": "Posterior cricoarytenoid (RLN)"}, {"q": "Blood supply to both parathyroid glands?", "a": "Predominantly the inferior thyroid artery"}, {"q": "Five terminal (parotid-plexus) branches of the facial nerve?", "a": "Temporal, Zygomatic, Buccal, Marginal mandibular, Cervical (also the proximal posterior auricular branch)"}, {"q": "Most common congenital cause of stridor?", "a": "Laryngomalacia (inspiratory, worse supine/feeding)"}, {"q": "Paradise criteria for tonsillectomy?", "a": "≥7 in 1 year, ≥5/year × 2 years, ≥3/year × 3 years"}, {"q": "Tube criteria for recurrent AOM ?", "a": "≥3 episodes in 6 months or ≥4 in 12 months with effusion (AAO-HNS, 2022)"}, {"q": "Narrowest part of the pediatric airway?", "a": "Classic answer the cricoid (narrowest fixed ring); note imaging suggests the glottis is functionally narrowest"}, {"q": "Steeple sign and a barky cough?", "a": "Croup (subglottic)"}]</script>
 <div id="cards-modal" class="modal" hidden role="dialog" aria-modal="true" aria-label="Flashcards">
   <div class="card-shell">
     <div class="card-bar"><span id="card-count"></span><span class="card-actions"><button id="card-pimp" title="Random card">Pimp me</button><button id="card-shuffle">Shuffle</button><button id="card-restart" title="Clear progress">Restart</button><button id="card-close" aria-label="Close flashcards">✕</button></span></div>
